@@ -45,7 +45,7 @@ export const Footer = () => {
         </section>
       </div>
       <div className="copyright">
-        Copyright © 2021 websitename - All rights reserved
+        Copyright © 2023 websitename - All rights reserved
       </div>
     </footer >
   )

@@ -228,7 +228,7 @@ const Time = props => {
               <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
             <div class="desc">
-              Participant Reporting <br/>
+              Participant Reporting <br />
               Venue: Entry Gate Time: 08.00AM
             </div>
           </div>
@@ -241,7 +241,7 @@ const Time = props => {
               <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
             <div class="desc">
-              Welcome ceremony and inauguration of the fest by the Chief Guest. <br/>
+              Welcome ceremony and inauguration of the fest by the Chief Guest. <br />
               Venue: Auditorium Time: 09.45AM</div>
           </div>
         </li>
@@ -252,7 +252,7 @@ const Time = props => {
               <span class="flag">Events Start</span>
               <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
-            <div class="desc">Bizz-Tank Venue: LT-1 Time: 01.45PM <br/> Prototype Exhibition Venue: Exam Hall Time: 01.45PM <br/> Bidding War(Group-1) Venue: LT-2 Time: 02.15PM</div>
+            <div class="desc">Bizz-Tank Venue: LT-1 Time: 01.45PM <br /> Prototype Exhibition Venue: Exam Hall Time: 01.45PM <br /> Bidding War(Group-1) Venue: LT-2 Time: 02.15PM</div>
           </div>
         </li>
 
@@ -262,7 +262,7 @@ const Time = props => {
               <span class="flag">Events</span>
               <span class="time-wrapper"><span class="time">22.04.23</span></span>
             </div>
-            <div class="desc">Pitch Against The Startup  Venue: LT-1 Time: 08.00AM <br/> AD-MAD Show  Venue: LT-4 Time: 08.00AM <br/> Bidding War(Group-2) Venue: LT-2 Time: 09.30AM <br/> Bidding War(Group-3) Venue: LT-2 Time: 01.30PM</div>
+            <div class="desc">Pitch Against The Startup  Venue: LT-1 Time: 08.00AM <br /> AD-MAD Show  Venue: LT-4 Time: 08.00AM <br /> Bidding War(Group-2) Venue: LT-2 Time: 09.30AM <br /> Bidding War(Group-3) Venue: LT-2 Time: 01.30PM</div>
           </div>
         </li>
 
@@ -272,7 +272,7 @@ const Time = props => {
               <span class="flag">Special Talk</span>
               <span class="time-wrapper"><span class="time">22.04.23</span></span>
             </div>
-            <div class="desc">Special Talk by Mr <br/> Venue: Auditorium Time: 04.00PM</div>
+            <div class="desc">Special Talk by Mr <br /> Venue: Auditorium Time: 04.00PM</div>
           </div>
         </li>
 
@@ -282,7 +282,7 @@ const Time = props => {
               <span class="flag">Event</span>
               <span class="time-wrapper"><span class="time">23.04.23</span></span>
             </div>
-            <div class="desc">Bidding War Finale <br/> Venue: LT-2 Time: 08.00AM</div>
+            <div class="desc">Bidding War Finale <br /> Venue: LT-2 Time: 08.00AM</div>
           </div>
         </li>
 
@@ -292,7 +292,7 @@ const Time = props => {
               <span class="flag">Closing Ceremony</span>
               <span class="time-wrapper"><span class="time">22.04.23</span></span>
             </div>
-            <div class="desc">Prize Distribution & Closing Ceremony<br/> Venue: LT-1 Time: 10.30AM</div>
+            <div class="desc">Prize Distribution & Closing Ceremony<br /> Venue: LT-1 Time: 10.30AM</div>
           </div>
         </li>
 

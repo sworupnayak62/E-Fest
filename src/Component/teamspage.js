@@ -68,16 +68,12 @@ const Card = ({ title, description, image }) => {
     }, []);
 
     return (
-        <div className="team-card" style={{ backgroundImage: `url(${image})`, objectFit: 'contain' }}>
-            <h3 className="card__name">{title}</h3>
-            {/* <span className="card__profession">{description}</span> */}
-
+        <div className="team-card" style={{ backgroundImage: `url(${image})`, minHeight: "280px", backgroundPosition: "-1em", backgroundRepeat: "no-repeat", backgroundSize: "300px" }}>
             <div className="card__social" id={socialCard}>
                 <div className="card__social-control">
                     <div className="card__social-toggle" id={toggleCard}>
                         <AiFillPlusCircle />
                     </div>
-
                     <span className="card__social-text">{title}</span>
                     <ul className="card__social-list">
                         {description}
@@ -90,12 +86,10 @@ const Card = ({ title, description, image }) => {
 
 export const Teams = () => {
     return (
-        <div>
-            <div className="card-grid">
-                {cards.map((card, index) => (
-                    <Card key={index} {...card} />
-                ))}
-            </div>
+        <div className="card-grid">
+            {cards.map((card, index) => (
+                <Card key={index} {...card} />
+            ))}
         </div>
     );
 }

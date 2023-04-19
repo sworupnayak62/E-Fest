@@ -1,15 +1,23 @@
 /* Slick Slider CSS */
-
+.gallery-container{
+    max-height:90vh;
+    width:100vw;
+    margin-top: 40px;  
+    overflow-x: hidden;     
+}
 /* Wrapper */
 .slider-wrapper {
-    max-width: 900px;
+    max-width: 70vw;
     margin: 0 auto;
   }
+
   
   /* Slider */
   .slick-slider {
     position: relative;
     display: block;
+    padding: 3%;
+    /* transition: all 2s ease-in-out; */
     box-sizing: border-box;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -138,5 +146,54 @@
     border-radius: 10px; /* add rounded corners to carousel items */
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* add a box-shadow to create a raised effect */
   }
+  
+  /* @media (max-width: 767px) {
+    .slick-slide {
+      width: 80vw !important;
+      margin: 0 auto;
+    }
+    
+    .slick-list {
+      margin: 0 -20px;
+    }
+    
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  } */
+
+  @media screen and (max-width: 768px) {
+    .slider-wrapper{
+        max-width: 450px;
+    }
+    .slick-slide {
+      width: 80vw !important;
+      margin: 0 auto;
+    }
+    .slick-current {
+        display: block;
+      }
+    
+      .slick-slide {
+        margin-right: 20px; /* add a 20px margin between items */
+      }
+      
+      /* remove margin from the last item */
+      .slick-slide:last-child {
+        margin-right: 0;
+      }
+       .slick-slide img{
+        margin: 0 10px; /* add margin between carousel items */
+        height: 40vh;
+        border-radius: 10px; /* add rounded corners to carousel items */
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* add a box-shadow to create a raised effect */
+      }
+    
+    
+  }
+    
+  
+ 
   
   

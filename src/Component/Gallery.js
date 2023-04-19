@@ -8,9 +8,11 @@ export const Gallery = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
-        slidesToShow: 3,
+        speed: 1500,
+        slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay: true, // enable autoplay
+        autoplaySpeed: 3000, // set autoplay speed to 3 seconds
         responsive: [
             {
                 breakpoint: 768,
@@ -28,30 +30,32 @@ export const Gallery = () => {
     };
 
     return (
-        <div className="slider-wrapper">
-            <Slider {...settings}>
-                <div>
-                    <img src="https://via.placeholder.com/400x300/f06/fff/?text=1" alt="" />
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/400x300/f63/fff/?text=2" alt="" />
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/400x300/fc3/fff/?text=3" alt="" />
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/400x300/693/fff/?text=4" alt="" />
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/400x300/3cc/fff/?text=5" alt="" />
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/400x300/369/fff/?text=6" alt="" />
-                </div>
-                <div>
-                    <img src="https://via.placeholder.com/400x300/936/fff/?text=7" alt="" />
-                </div>
-            </Slider>
+        <div className='gallery-container'>
+            <div className="slider-wrapper">
+                <Slider {...settings}>
+                    <div>
+                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                    </div>
+                    <div>
+                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                    </div>
+                </Slider>
+            </div>
         </div>
     );
 };
