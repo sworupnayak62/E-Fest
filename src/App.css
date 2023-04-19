@@ -1141,3 +1141,30 @@ body {
   color: white;
   font-size: 2.4rem;
 }
+
+#footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  background-color: #181d23;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+}
+
+
+#gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  background-color: #181d23;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+}

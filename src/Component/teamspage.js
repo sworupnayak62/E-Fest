@@ -1,42 +1,42 @@
 import React from "react";
 import "../css/teams.css";
-
+import { AiFillPlusCircle } from 'react-icons/ai';
 const cards = [
     {
         title: "Card 1",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?",
-        image: "https://via.placeholder.com/150"
+            "Lorem",
+        image: "https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626"
     },
     {
         title: "Card 2",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?",
-        image: "https://via.placeholder.com/150"
+        image: "https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626"
     },
     {
         title: "Card 3",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?",
-        image: "https://via.placeholder.com/150"
+        image: "https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626"
     },
     {
         title: "Card 4",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?",
-        image: "https://via.placeholder.com/150"
+        image: "https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626"
     },
     {
         title: "Card 5",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?",
-        image: "https://via.placeholder.com/150"
+        image: "https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626"
     },
     {
         title: "Card 6",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?",
-        image: "https://via.placeholder.com/150"
+        image: "https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626"
     }
 ];
 
@@ -68,34 +68,20 @@ const Card = ({ title, description, image }) => {
     }, []);
 
     return (
-        <div className="team-card">
-            <div className="card__border">
-                <img src={image} className="card__img" />
-            </div>
-
+        <div className="team-card" style={{ backgroundImage: `url(${image})`, objectFit: 'contain' }}>
             <h3 className="card__name">{title}</h3>
-            <span className="card__profession">{description}</span>
+            {/* <span className="card__profession">{description}</span> */}
 
             <div className="card__social" id={socialCard}>
                 <div className="card__social-control">
                     <div className="card__social-toggle" id={toggleCard}>
-                        <i className="ri-add-line"></i>
+                        <AiFillPlusCircle />
                     </div>
 
-                    <span className="card__social-text">E-FEST 5.0</span>
-                    {/* <ul className="card__social-list">
-              <a href="https://www.facebook.com/" target="_blank" className="card__social-link">
-                <i className="ri-facebook-line"></i>
-              </a>
-  
-              <a href="https://www.instagram.com/" target="_blank" className="card__social-link">
-                <i className="ri-instagram-line"></i>
-              </a>
-  
-              <a href="https://www.twitter.com/" target="_blank" className="card__social-link">
-                <i className="ri-twitter-line"></i>
-              </a>
-            </ul> */}
+                    <span className="card__social-text">{title}</span>
+                    <ul className="card__social-list">
+                        {description}
+                    </ul>
                 </div>
             </div>
         </div>
@@ -104,10 +90,12 @@ const Card = ({ title, description, image }) => {
 
 export const Teams = () => {
     return (
-        <div className="card-grid">
-            {cards.map((card, index) => (
-                <Card key={index} {...card} />
-            ))}
+        <div>
+            <div className="card-grid">
+                {cards.map((card, index) => (
+                    <Card key={index} {...card} />
+                ))}
+            </div>
         </div>
     );
 }

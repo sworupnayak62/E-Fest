@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import $ from "jquery";
 import './css/timeline.css'
 import { Sponsor } from './Component/Sponsor';
+import { Gallery } from './Component/Gallery';
 import "./css/event.scss"
 
 // import { BrowserRouter , Routes, Route } from 'react-router-dom';
@@ -26,7 +27,9 @@ import "./css/event.scss"
  ***********************/
 
 import React from 'react';
-import { ReactDOM } from 'react';
+import { Footer } from './Component/Footer';
+
+
 
 const Menu = props => {
   return (
@@ -342,12 +345,12 @@ const Timeline = props => {
                       <ul class="faq-content">
                         <li>
                           <div>
-                            <p>There are a total of 5 events:<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1. Biz-Tank&nbsp;&nbsp;
-                            &nbsp;2. Pitch Against The Startup  &nbsp;&nbsp; 
-                            &nbsp;3. Bidding War    &nbsp;&nbsp;<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;4. Prototype Exhibition (Junior) and (Senior)&nbsp;&nbsp;
-                            &nbsp;5. AD-MAD Show</p>
+                            <p>There are a total of 5 events:<br />
+                              &nbsp;&nbsp;&nbsp;&nbsp;1. Biz-Tank&nbsp;&nbsp;
+                              &nbsp;2. Pitch Against The Startup  &nbsp;&nbsp;
+                              &nbsp;3. Bidding War    &nbsp;&nbsp;<br />
+                              &nbsp;&nbsp;&nbsp;&nbsp;4. Prototype Exhibition (Junior) and (Senior)&nbsp;&nbsp;
+                              &nbsp;5. AD-MAD Show</p>
                           </div>
                         </li>
                       </ul>
@@ -517,31 +520,22 @@ const Events = props => {
 
 
 
+const Gallery1 = props => {
+  return (
+    <div id='gallery'>
+      <Gallery />
+    </div>
+  );
+};
 
+const Footer1 = props => {
+  return (
+    <div className='footer-container' id='footer-container'>
+      <Footer />
 
-
-// const Footer = props => {
-//   return (
-//   <footer className="footer-container" id='footer'>
-//       <div className="footer-column">
-//         <h3>About Us</h3>
-//         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit tortor vitae est faucibus, quis maximus quam malesuada.</p>
-//       </div>
-//       <div className="footer-column">
-//         <h3>Useful Links</h3>
-//         <ul>
-//           <li><a href="#">Home</a></li>
-//           <li><a href="#">About Us</a></li>
-//           <li><a href="#">Contact Us</a></li>
-//         </ul>
-//       </div>
-//       <div className="footer-column">
-//         <h3>Contact Us</h3>
-//         <p>1234 Main Street<br />Anytown, USA 12345<br />(123) 456-7890<br />email@example.com</p>
-//       </div>
-//     </footer>
-//   );
-// };
+    </div>
+  );
+};
 
 
 /***********************
@@ -579,7 +573,9 @@ class App extends React.Component {
         <Events />
         <Time />
         <Timeline />
+        <Gallery1 />
         <Sponsor1 />
+        <Footer1 />
       </React.Fragment>
     );
   }
