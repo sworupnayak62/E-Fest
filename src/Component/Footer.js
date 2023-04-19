@@ -1,117 +1,52 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css';
+import React from 'react';
 import '../css/footer.css';
-
+import { FaFacebook } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { ImLocation } from 'react-icons/im';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 
 export const Footer = () => {
   return (
-    <div>
-        <footer class="footer-section">
-  <div class="container">
-    <div class="footer-cta pt-5 pb-5">
-      <div class="row">
-        <div class="col-xl-4 col-md-4 mb-30">
-          <div class="single-cta">
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="cta-text">
-              <h4>Find us</h4>
-              <span>1010 Avenue, sw 54321, chandigarh</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-4 mb-30">
-          <div class="single-cta">
-            <i class="fas fa-phone"></i>
-            <div class="cta-text">
-              <h4>Call us</h4>
-              <span>9876543210 0</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-4 mb-30">
-          <div class="single-cta">
-            <i class="far fa-envelope-open"></i>
-            <div class="cta-text">
-              <h4>Mail us</h4>
-              <span>mail@info.com</span>
-            </div>
-          </div>
-        </div>
+    <footer>
+      <div className="top_header">
+        <section>
+          <span><ImLocation className="fa fa-map-marker" /></span>
+          <span>Street, full address, state/province, country, pincode</span>
+        </section>
+        <section>
+          <span><BsFillTelephoneFill className="fa fa-phone" /></span>
+          <span>(+91) 7978575241</span>
+        </section>
+        <section>
+          <span><MdEmail className="fa fa-envelope" /></span>
+          <span>sit.edcell@gmail.com</span>
+        </section>
       </div>
-    </div>
-    <div class="footer-content pt-5 pb-5">
-      <div class="row">
-        <div class="col-xl-4 col-lg-4 mb-50">
-          <div class="footer-widget">
-            <div class="footer-logo">
-            </div>
-            <div class="footer-text">
-              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                elit,Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="footer-social-icon">
-              <span>Follow us</span>
-              <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-              <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-              <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-          <div class="footer-widget">
-            <div class="footer-widget-heading">
-              <h3>Useful Links</h3>
-            </div>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">services</a></li>
-              <li><a href="#">portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Expert Team</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Latest News</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-          <div class="footer-widget">
-            <div class="footer-widget-heading">
-              <h3>Subscribe</h3>
-            </div>
-            <div class="footer-text mb-25">
-              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-            </div>
-          </div>
-        </div>
+      <span class="border-shape"></span>
+      <div class="bottom_content">
+        <section className='social-links-footer'>
+          <span className="fa fa-envelope"><FaFacebook /></span>
+          <span className="fa fa-envelope"><FaInstagram /></span>
+          <span className="fa fa-envelope"><FaTwitter /></span>
+          <span className="fa fa-envelope"><FaLinkedin /></span>
+
+
+        </section>
+        <section className='footer-links'>
+          <a href="#">Home</a>
+          <a href="#">Faq</a>
+          <a href="#">Gallery</a>
+          <a href="#">Events</a>
+          <a href="#">Teams</a>
+        </section>
       </div>
-    </div>
-  </div>
-  <div class="copyright-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-          <div class="copyright-text">
-            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-          </div>
-        </div>
-        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-          <div class="footer-menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Policy</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+      <div className="copyright">
+        Copyright © 2023 websitename - All rights reserved
       </div>
-    </div>
-  </div>
-</footer>
-    </div>
+    </footer >
   )
 }

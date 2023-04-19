@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import $ from "jquery";
 import './css/timeline.css'
 import { Sponsor } from './Component/Sponsor';
+import { Gallery } from './Component/Gallery';
 import "./css/event.scss"
 
 // import { BrowserRouter , Routes, Route } from 'react-router-dom';
@@ -26,7 +27,9 @@ import "./css/event.scss"
  ***********************/
 
 import React from 'react';
-import { ReactDOM } from 'react';
+import { Footer } from './Component/Footer';
+
+
 
 const Menu = props => {
   return (
@@ -225,7 +228,7 @@ const Time = props => {
               <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
             <div class="desc">
-              Participant Reporting <br/>
+              Participant Reporting <br />
               Venue: Entry Gate Time: 08.00AM
             </div>
           </div>
@@ -238,7 +241,7 @@ const Time = props => {
               <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
             <div class="desc">
-              Welcome ceremony and inauguration of the fest by the Chief Guest. <br/>
+              Welcome ceremony and inauguration of the fest by the Chief Guest. <br />
               Venue: Auditorium Time: 09.45AM</div>
           </div>
         </li>
@@ -249,7 +252,7 @@ const Time = props => {
               <span class="flag">Events Start</span>
               <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
-            <div class="desc">Bizz-Tank Venue: LT-1 Time: 01.45PM <br/> Prototype Exhibition Venue: Exam Hall Time: 01.45PM <br/> Bidding War(Group-1) Venue: LT-2 Time: 02.15PM</div>
+            <div class="desc">Bizz-Tank Venue: LT-1 Time: 01.45PM <br /> Prototype Exhibition Venue: Exam Hall Time: 01.45PM <br /> Bidding War(Group-1) Venue: LT-2 Time: 02.15PM</div>
           </div>
         </li>
 
@@ -259,7 +262,7 @@ const Time = props => {
               <span class="flag">Events</span>
               <span class="time-wrapper"><span class="time">22.04.23</span></span>
             </div>
-            <div class="desc">Pitch Against The Startup  Venue: LT-1 Time: 08.00AM <br/> AD-MAD Show  Venue: LT-4 Time: 08.00AM <br/> Bidding War(Group-2) Venue: LT-2 Time: 09.30AM <br/> Bidding War(Group-3) Venue: LT-2 Time: 01.30PM</div>
+            <div class="desc">Pitch Against The Startup  Venue: LT-1 Time: 08.00AM <br /> AD-MAD Show  Venue: LT-4 Time: 08.00AM <br /> Bidding War(Group-2) Venue: LT-2 Time: 09.30AM <br /> Bidding War(Group-3) Venue: LT-2 Time: 01.30PM</div>
           </div>
         </li>
 
@@ -269,7 +272,7 @@ const Time = props => {
               <span class="flag">Special Talk</span>
               <span class="time-wrapper"><span class="time">22.04.23</span></span>
             </div>
-            <div class="desc">Special Talk by Mr <br/> Venue: Auditorium Time: 04.00PM</div>
+            <div class="desc">Special Talk by Mr <br /> Venue: Auditorium Time: 04.00PM</div>
           </div>
         </li>
 
@@ -279,7 +282,7 @@ const Time = props => {
               <span class="flag">Event</span>
               <span class="time-wrapper"><span class="time">23.04.23</span></span>
             </div>
-            <div class="desc">Bidding War Finale <br/> Venue: LT-2 Time: 08.00AM</div>
+            <div class="desc">Bidding War Finale <br /> Venue: LT-2 Time: 08.00AM</div>
           </div>
         </li>
 
@@ -289,7 +292,7 @@ const Time = props => {
               <span class="flag">Closing Ceremony</span>
               <span class="time-wrapper"><span class="time">22.04.23</span></span>
             </div>
-            <div class="desc">Prize Distribution & Closing Ceremony<br/> Venue: LT-1 Time: 10.30AM</div>
+            <div class="desc">Prize Distribution & Closing Ceremony<br /> Venue: LT-1 Time: 10.30AM</div>
           </div>
         </li>
 
@@ -550,31 +553,22 @@ const Events = props => {
 
 
 
+const Gallery1 = props => {
+  return (
+    <div id='gallery'>
+      <Gallery />
+    </div>
+  );
+};
 
+const Footer1 = props => {
+  return (
+    <div className='footer-container' id='footer-container'>
+      <Footer />
 
-
-// const Footer = props => {
-//   return (
-//   <footer className="footer-container" id='footer'>
-//       <div className="footer-column">
-//         <h3>About Us</h3>
-//         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit tortor vitae est faucibus, quis maximus quam malesuada.</p>
-//       </div>
-//       <div className="footer-column">
-//         <h3>Useful Links</h3>
-//         <ul>
-//           <li><a href="#">Home</a></li>
-//           <li><a href="#">About Us</a></li>
-//           <li><a href="#">Contact Us</a></li>
-//         </ul>
-//       </div>
-//       <div className="footer-column">
-//         <h3>Contact Us</h3>
-//         <p>1234 Main Street<br />Anytown, USA 12345<br />(123) 456-7890<br />email@example.com</p>
-//       </div>
-//     </footer>
-//   );
-// };
+    </div>
+  );
+};
 
 
 /***********************
@@ -612,7 +606,9 @@ class App extends React.Component {
         <Events />
         <Time />
         <Timeline />
+        <Gallery1 />
         <Sponsor1 />
+        <Footer1 />
       </React.Fragment>
     );
   }
