@@ -221,50 +221,75 @@ const Time = props => {
         <li>
           <div class="direction-r">
             <div class="flag-wrapper">
-              <span class="flag">Freelancer</span>
-              <span class="time-wrapper"><span class="time">2013 - present</span></span>
+              <span class="flag">Registration</span>
+              <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
-            <div class="desc">My current employment. Way better than the position before!</div>
+            <div class="desc">
+              Participant Reporting <br/>
+              Venue: Entry Gate Time: 08.00AM
+            </div>
           </div>
         </li>
 
         <li>
           <div class="direction-l">
             <div class="flag-wrapper">
-              <span class="flag">Apple Inc.</span>
-              <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+              <span class="flag">Inaguration</span>
+              <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
-            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+            <div class="desc">
+              Welcome ceremony and inauguration of the fest by the Chief Guest. <br/>
+              Venue: Auditorium Time: 09.45AM</div>
           </div>
         </li>
 
         <li>
           <div class="direction-r">
             <div class="flag-wrapper">
-              <span class="flag">Harvard University</span>
-              <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+              <span class="flag">Events Start</span>
+              <span class="time-wrapper"><span class="time">21.04.23</span></span>
             </div>
-            <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+            <div class="desc">Bizz-Tank Venue: LT-1 Time: 01.45PM <br/> Prototype Exhibition Venue: Exam Hall Time: 01.45PM <br/> Bidding War(Group-1) Venue: LT-2 Time: 02.15PM</div>
           </div>
         </li>
 
         <li>
           <div class="direction-l">
             <div class="flag-wrapper">
-              <span class="flag">Harvard University</span>
-              <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+              <span class="flag">Events</span>
+              <span class="time-wrapper"><span class="time">22.04.23</span></span>
             </div>
-            <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+            <div class="desc">Pitch Against The Startup  Venue: LT-1 Time: 08.00AM <br/> AD-MAD Show  Venue: LT-4 Time: 08.00AM <br/> Bidding War(Group-2) Venue: LT-2 Time: 09.30AM <br/> Bidding War(Group-3) Venue: LT-2 Time: 01.30PM</div>
           </div>
         </li>
 
         <li>
           <div class="direction-r">
             <div class="flag-wrapper">
-              <span class="flag">Harvard University</span>
-              <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+              <span class="flag">Special Talk</span>
+              <span class="time-wrapper"><span class="time">22.04.23</span></span>
             </div>
-            <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+            <div class="desc">Special Talk by Mr <br/> Venue: Auditorium Time: 04.00PM</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">Event</span>
+              <span class="time-wrapper"><span class="time">23.04.23</span></span>
+            </div>
+            <div class="desc">Bidding War Finale <br/> Venue: LT-2 Time: 08.00AM</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Closing Ceremony</span>
+              <span class="time-wrapper"><span class="time">22.04.23</span></span>
+            </div>
+            <div class="desc">Prize Distribution & Closing Ceremony<br/> Venue: LT-1 Time: 10.30AM</div>
           </div>
         </li>
 

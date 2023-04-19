@@ -484,6 +484,7 @@ a:active {
     animation: moon-move-in 1.2s 1s forwards;
     background: url(./Images/Moon.svg) no-repeat;
     right: -10%;
+    display: none;
   }
 }
 
@@ -900,15 +901,17 @@ body {
 
 .direction-l {
   position: relative;
-  width: 300px;
+  width: 400px;
   float: left;
   text-align: right;
+  right: 15%;
 }
 
 .direction-r {
   position: relative;
-  width: 300px;
+  width: 400px;
   float: right;
+  right: -15%;
 }
 
 .flag-wrapper {
@@ -1037,11 +1040,16 @@ body {
 	padding: 2em 0;
 }
 
-.direction-l,
+.direction-l{
+  float: none;
+  width: 100%;
+  left: 0.8%;
+  text-align: center;
+}
 .direction-r {
 	float: none;
 	width: 100%;
-
+  right: -0.8%;
 	text-align: center;
 }
 
