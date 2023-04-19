@@ -57,7 +57,7 @@ a:active {
   position: absolute;
   right: 0;
   height: calc( 100vh - 120px );
-  width: calc( 100vw - 120px );
+  width: 100vw ;
   background: #181d23;
 }
 
@@ -215,7 +215,7 @@ a:active {
 
 .menu-container ul li a:hover::after {
   content: ' »';
-  color: #f300b4;
+  color: #101350;
 }
 
 .social {
@@ -234,7 +234,7 @@ a:active {
 
 .menu-container a:hover,
 .menu-container a:active {
-  color: #f300b4;
+  color: #101350;
 }
 
 @media only screen and (max-width: 649px) {
@@ -358,7 +358,7 @@ a:active {
 .menu-button:hover > span,
 .menu-button:hover > span::before,
 .menu-button:hover > span::after {
-  background: #f300b4;
+  background: #101350;
 }
 
 .menu-button.active > span  {
@@ -411,7 +411,7 @@ a:active {
 #welcome-section::before {
   content: '';
   position: fixed;
-  background: url(./Images/Stars.svg?sanitize=true);
+  background: url(./Images/Stars.svg);
   background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
@@ -480,12 +480,6 @@ a:active {
     top: -5%;
     left: -10%;
   }
-  .moon{
-    animation: moon-move-in 1.2s 1s forwards;
-    background: url(./Images/Moon.svg) no-repeat;
-    right: -10%;
-    display: none;
-  }
 }
 
 .moon {
@@ -516,7 +510,7 @@ a:active {
 
 /* Copy and CTA */
 #welcome-section .container {
-  width: fit-content;
+  width: 100vw;
   position: absolute;
   right: 0;
   top: 55%;
@@ -549,47 +543,6 @@ a:active {
 
 #welcome-section .container h1 .line:last-child {
   margin-left: 2rem;
-}
-
-#welcome-section .container .buttons {
-  display: flex;
-}
-
-#welcome-section .container .buttons a,
-#welcome-section .container .buttons a:visited {
-  /* margin-left: 20px; */
-  width: 14vw;
-  padding: 1rem;
-  border: 1px solid #fafafa;
-  color: #fafafa;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-#welcome-section .container .buttons a:hover,
-#welcome-section .container .buttons a:active {
-  border: 1px solid #f300b4;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 100px -20px #f300b4;
-}
-
-#welcome-section .container .buttons a.cta,
-#welcome-section .container .buttons a.cta:visited {
-  background: #f300b4;
-  border: 1px solid transparent;
-  color: #fafafa;
-  font-weight: bold;
-}
-
-#welcome-section .container .buttons a.cta:hover,
-#welcome-section .container .buttons a.cta:active {
-  background: transparent;
-  border: 1px solid #f300b4;
-}
-
-#welcome-section .container .buttons a:first-child {
-  margin-right: 1rem;
 }
 
 .line {
@@ -646,17 +599,19 @@ a:active {
  *****************
  *****************/
 
-#about {
+ #about {
   height: 100%;
   min-height: 100vh;
   font-size: 1.4rem;
   position: relative;
-  background: #fafafa;
   clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
   z-index: 5;
-  background: #fafafa url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Author_BG.jpg) center right no-repeat;
+  background: #262525 url(./Images/Logo1.png) center no-repeat;
+  background-size: 60%;
   background-attachment: fixed;
+  color: white;
 }
+
 
 #about .wrapper {
   padding: 4rem;
@@ -668,16 +623,17 @@ a:active {
 
 #about article {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
   padding: 1rem 0;
 }
 
 #about .title {
-  grid-column-end: span 4;
+  grid-column-end: span 3;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1.2rem;
 }
 
 #about .title h3 {
@@ -685,7 +641,7 @@ a:active {
 }
 
 #about .separator {
-  background: #f300b4;
+  background: #101350;
   width: 150px;
   height: 2px;
   margin: 1rem 0;
@@ -701,25 +657,46 @@ a:active {
 
 #about p {
   padding-bottom: 1.1rem;
-  color: #555;
-  line-height: 1.5rem;
+  color: white;
+  line-height: 1.3rem;
+  font-size: 1.2rem;
 }
 
 #about .desc.full {
-  grid-column-end: span 4;
+  grid-column-end: span 3;
   margin-bottom: 2rem;
 }
 
 #about .desc {
-  grid-column-end: span 2;
+  grid-column-end: span 1;
   background: #ffffffaa;
-  padding: 2rem;
+  padding: 1.4rem;
   text-align: justify;
+  backdrop-filter: blur(23px) saturate(139%);
+    -webkit-backdrop-filter: blur(23px) saturate(139%);
+    background-color: rgba(16, 19, 80, 0.61);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#about .speaker1{
+  position: relative;
+  text-align: center;
+  transform: translateY(-18%);
+}
+
+#about .speaker1 img{
+  display: inline-block;
+  width: 60%;
+  border-radius: 10px;
+  z-index: 10;
+  border: 2px solid white;
 }
 
 #about .desig{
   font-size: 1rem;
   line-height: 1rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1149px) {
@@ -742,17 +719,28 @@ a:active {
     background-size: cover;
   }
 }
-@media only screen and (max-width: 649px) {
+@media only screen and (max-width: 768px) {
   #about .wrapper {
     padding: 1rem;
   }
   #about p {
     padding-bottom: 1.2rem;
-    color: #555;
     line-height: 1rem;
     text-align: justify;
     font-size: 0.95rem;
   }
+  #about .speaker1{
+    transform: translateY(-18%);
+  }
+  #about article {
+    grid-gap: 3rem 0rem;
+    margin-bottom: 4rem;
+  }
+
+  #about {
+    background: #262525;
+  }
+  
 }
 
 
@@ -1029,10 +1017,10 @@ body {
 
 /* ================ Timeline Media Queries ================ */
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 765px) {
 
 .timeline {
- 	width: 100%;
+ 	width: 98%;
 	padding: 4em 0 1em 0;
 }
 
@@ -1218,4 +1206,9 @@ body {
   position: relative;
   flex-direction: column;
   z-index: 1;
+}
+
+#gallery .title h3{
+  color: white;
+  font-size: 2.4rem;
 }

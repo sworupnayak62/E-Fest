@@ -9,10 +9,10 @@ export const Gallery = () => {
         dots: true,
         infinite: true,
         speed: 1500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true, // enable autoplay
-        autoplaySpeed: 3000, // set autoplay speed to 3 seconds
+        autoplaySpeed: 1800, // set autoplay speed to 3 seconds
         responsive: [
             {
                 breakpoint: 768,

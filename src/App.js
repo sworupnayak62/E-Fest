@@ -5,6 +5,8 @@ import './css/timeline.css'
 import { Sponsor } from './Component/Sponsor';
 import { Gallery } from './Component/Gallery';
 import "./css/event.scss"
+import OLL  from './Images/OLL.jpg';
+import Delhi  from './Images/Delhi.jpg';
 
 // import { BrowserRouter , Routes, Route } from 'react-router-dom';
 // import { Timeline } from './Component/Timeline';
@@ -172,7 +174,11 @@ const About = props => {
             <h3>Guest Speakers</h3>
             <p className="separator" />
           </div>
+
           <div className="desc">
+          <div className='speaker1'>
+              <img src={OLL} />
+            </div>
             <h4 className="subtitle">SHREYAAN DAGA</h4>
             <p className='desig'>
               Co-Founder , OLL
@@ -188,7 +194,32 @@ const About = props => {
 
             </p>
           </div>
+
           <div className="desc">
+          <div className='speaker1'>
+              <img src={OLL} />
+            </div>
+            <h4 className="subtitle">SHREYAAN DAGA</h4>
+            <p className='desig'>
+              Co-Founder , OLL
+
+            </p>
+            <p>
+              One of the youngest pitchers on Shark Tank India Season 2, OLL cofounder Shreyaan Daga left the ‘sharks’ impressed by his aptitude
+              and business skills. Having started his entrepreneurial journey at the
+              age of 8, Daga started his online learning company as a teenager
+              last year. While a few ‘sharks’ backed out realising that the business
+              would be tough to scale up, Peyush Bansal and Vineeta Singh
+              offered Rs 30 lakh for 5% equity of his company.
+
+            </p>
+          </div>
+          
+          
+          <div className="desc">
+          <div className='speaker1'>
+            <img src={Delhi} />
+            </div>
             <h4 className="subtitle">DIPAN SAHU</h4>
             <p className='desig'>
               Asst. Innovation Director,<br />
@@ -556,6 +587,11 @@ const Events = props => {
 const Gallery1 = props => {
   return (
     <div id='gallery'>
+      <div className='title'>
+        <h3>
+          GALLERY
+        </h3>
+      </div>
       <Gallery />
     </div>
   );

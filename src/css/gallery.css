@@ -1,13 +1,12 @@
 /* Slick Slider CSS */
 .gallery-container{
-    max-height:90vh;
-    width:100vw;
+    max-height: 45vh;
+    width:90vw;
     margin-top: 40px;  
-    overflow-x: hidden;     
 }
 /* Wrapper */
 .slider-wrapper {
-    max-width: 70vw;
+    max-width: 80vw;
     margin: 0 auto;
   }
 
@@ -98,8 +97,8 @@
   .slick-prev,
   .slick-next {
     position: absolute;
-    top: 50%;
-    z-index: 1;
+    top: 25%;
+    z-index: 5;
     display: block;
     width: 40px;
     height: 40px;
@@ -116,6 +115,7 @@
   .slick-next:focus,
   .slick-next:hover {
     outline: none;
+    display: hidden;
   }
   
   .slick-prev {
@@ -165,7 +165,7 @@
 
   @media screen and (max-width: 768px) {
     .slider-wrapper{
-        max-width: 450px;
+        max-width: 98vw;
     }
     .slick-slide {
       width: 80vw !important;
@@ -193,7 +193,9 @@
     
   }
     
-  
+  .slick-prev, .slick-next {
+    display: none !important;
+}
  
   
   

@@ -74,7 +74,7 @@ ul{
     content: '+';
     float: right;
     font-weight:300;
-    margin-right: 1.25em;
+    margin-right: .75em;
     -webkit-transform: scale(2);
     -ms-transform: scale(2);
             transform: scale(2);
@@ -226,7 +226,19 @@ ul{
 	}
 }
 
-@media only screen and (max-width: 500px) {
-    .faq-container {width: 90vw; margin: 0 auto; overflow: hidden}
+@media only screen and (max-width: 765px) {
+    .faq-container {width: 75vw; margin: 0 auto; overflow: hidden}
+	.faq-accordion li div {
+		color: #ffffff;
+		font-size: 0.9rem;
+	}
+	.faq-accordion > li > div:after {
+		font-size: .9rem;
+	}
+	.faq-content p {
+		margin: 0 .25rem;
+		padding: .25em 0;
+		font-size: .9rem;
+	}
   }
 
