@@ -81,14 +81,16 @@
     display: none;
     float: left;
     height: 100%;
-    min-height: 1px;
+    
   }
   
   /* Image */
   .slick-slide img {
     display: block;
+    min-height: 25vh;
     width: 100%;
     height: 100%;
+    
     object-fit: cover;
     border-radius: 5px;
   }
@@ -131,6 +133,8 @@
   /* Active slide */
   .slick-current {
     display: block;
+     border-radius: 10px;
+
   }
 
   .slick-slide {
@@ -143,8 +147,9 @@
   }
    .slick-slide img{
     margin: 0 10px; /* add margin between carousel items */
+    /* add a box-shadow to create a raised effect */
     border-radius: 10px; /* add rounded corners to carousel items */
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* add a box-shadow to create a raised effect */
+    /* box-shadow: 0px 3px 5px rgba(22, 156, 205, 0.767); */
   }
   
   /* @media (max-width: 767px) {
