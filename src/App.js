@@ -5,8 +5,9 @@ import './css/timeline.css'
 import { Sponsor } from './Component/Sponsor';
 import { Gallery } from './Component/Gallery';
 import "./css/event.scss"
-import OLL  from './Images/OLL.jpg';
-import Delhi  from './Images/Delhi.jpg';
+import OLL from './Images/OLL.jpg';
+import Delhi from './Images/Delhi.jpg';
+import AnimatedSVG from './Component/AnimatedSvg';
 
 // import { BrowserRouter , Routes, Route } from 'react-router-dom';
 // import { Timeline } from './Component/Timeline';
@@ -65,8 +66,8 @@ const Menu = props => {
             </a>
           </li>
           <li>
-            <a href="#sponsor" onClick={props.toggleMenu}>
-              SPONSOR
+            <a href="/team" onClick={props.toggleMenu}>
+              TEAM
             </a>
           </li>
         </ul>
@@ -115,8 +116,8 @@ const Header = props => {
       <div className="moon" />
       <div className="container">
         <h1>
-          <span className="line">Entrepreneur's</span>
-          <span className="line">Fest-<span className="color">5.0</span></span>
+          <span className="line">ENTREPRENEUR'S</span>
+          <span className="line">FEST-<span className="color">5.0</span></span>
         </h1>
         {/* <div className="buttons">
           <a href="#event">Events</a>
@@ -176,7 +177,24 @@ const About = props => {
           </div>
 
           <div className="desc">
-          <div className='speaker1'>
+            <div className='speaker1'>
+              <img src="https://ik.imagekit.io/nsrgvmehl/omakarRai.jpg?updatedAt=1681953768107" />
+            </div>
+            <h4 className="subtitle">Dr.Omkar Rai</h4>
+            <p className='desig'>
+              Executive Chairman of Startup Odisha
+
+            </p>
+            <p>
+              Dr. Omkar Rai is the Executive Chairman of "Startup Odisha" who has played a pivotal role in the formulation & rolling out of NPSP 2019. Under his leadership, STPI in line with the vision of Digital India, Make in India & Startup India has been executing various schemes and programmes.
+
+              Dr. Rai has a deep understanding of the ever-changing needs of the industry
+
+            </p>
+          </div>
+
+          <div className="desc">
+            <div className='speaker1'>
               <img src={OLL} />
             </div>
             <h4 className="subtitle">SHREYAAN DAGA</h4>
@@ -195,30 +213,10 @@ const About = props => {
             </p>
           </div>
 
-          <div className="desc">
-          <div className='speaker1'>
-              <img src={OLL} />
-            </div>
-            <h4 className="subtitle">SHREYAAN DAGA</h4>
-            <p className='desig'>
-              Co-Founder , OLL
 
-            </p>
-            <p>
-              One of the youngest pitchers on Shark Tank India Season 2, OLL cofounder Shreyaan Daga left the ‘sharks’ impressed by his aptitude
-              and business skills. Having started his entrepreneurial journey at the
-              age of 8, Daga started his online learning company as a teenager
-              last year. While a few ‘sharks’ backed out realising that the business
-              would be tough to scale up, Peyush Bansal and Vineeta Singh
-              offered Rs 30 lakh for 5% equity of his company.
-
-            </p>
-          </div>
-          
-          
           <div className="desc">
-          <div className='speaker1'>
-            <img src={Delhi} />
+            <div className='speaker1'>
+              <img src={Delhi} />
             </div>
             <h4 className="subtitle">DIPAN SAHU</h4>
             <p className='desig'>
@@ -619,45 +617,31 @@ const Footer1 = props => {
 
 class App extends React.Component {
   state = {
-    menuState: false
+    menuState: false,
+    isLoading: true
   };
 
   toggleMenu = () => {
     this.setState(state => ({
-      menuState: !state.menuState
-        ? 'active'
-        : state.menuState === 'deactive'
-          ? 'active'
-          : 'deactive'
+      menuState:
+        !state.menuState
+          ? "active"
+          : state.menuState === "deactive"
+            ? "active"
+            : "deactive",
     }));
   };
 
-  render() {
-    return (
-      <React.Fragment>
-        <Menu toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
-        <Nav toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
-        <Header />
-        <About />
-        <Events />
-        <Time />
-        <Timeline />
-        <Gallery1 />
-        <Sponsor1 />
-        <Footer1 />
-      </React.Fragment>
-    );
-  }
-
   componentDidMount() {
-    const navbar = document.querySelector('#navbar');
-    const header = document.querySelector('#welcome-section');
-    const forest = document.querySelector('.forest');
-    const silhouette = document.querySelector('.silhouette');
+    const navbar = document.querySelector("#navbar");
+    const header = document.querySelector("#welcome-section");
+    const forest = document.querySelector(".forest");
+    const silhouette = document.querySelector(".silhouette");
     let forestInitPos = -300;
 
     window.onscroll = () => {
-      let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+      let scrollPos =
+        document.documentElement.scrollTop || document.body.scrollTop;
 
       if (scrollPos <= window.innerHeight) {
         silhouette.style.bottom = `${parseInt(scrollPos / 6)}px`;
@@ -665,13 +649,14 @@ class App extends React.Component {
       }
 
       if (scrollPos - 100 <= window.innerHeight)
-        header.style.visibility = header.style.visibility === 'hidden' && 'visible';
-      else header.style.visibility = 'hidden';
+        header.style.visibility =
+          header.style.visibility === "hidden" && "visible";
+      else header.style.visibility = "hidden";
 
-      if (scrollPos + 100 >= window.innerHeight) navbar.classList.add('bg-active');
-      else navbar.classList.remove('bg-active');
+      if (scrollPos + 100 >= window.innerHeight)
+        navbar.classList.add("bg-active");
+      else navbar.classList.remove("bg-active");
     };
-
     (function navSmoothScrolling() {
       const internalLinks = document.querySelectorAll('a[href^="#"]');
       for (let i in internalLinks) {
@@ -686,8 +671,31 @@ class App extends React.Component {
         }
       }
     })();
+
+    // Simulate content loading for 2 seconds
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 1500);
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        {this.state.isLoading && <AnimatedSVG />}
+        <Menu toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
+        <Nav toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
+        <Header />
+        <About />
+        <Events />
+        <Time />
+        <Timeline />
+        <Gallery1 />
+        <Sponsor1 />
+        <Footer1 />
+      </React.Fragment>
+    );
   }
 }
 
-
 export default App;
+

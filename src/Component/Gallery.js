@@ -34,25 +34,25 @@ export const Gallery = () => {
             <div className="slider-wrapper">
                 <Slider {...settings}>
                     <div>
-                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                        <img src="https://ik.imagekit.io/nsrgvmehl/img9.JPG?updatedAt=1681952964991" alt="" />
                     </div>
                     <div>
-                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                        <img src="https://ik.imagekit.io/nsrgvmehl/img8.jpg?updatedAt=1681952955339" alt="" />
                     </div>
                     <div>
-                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                        <img src="https://ik.imagekit.io/nsrgvmehl/img1.jpeg?updatedAt=1681952900499" alt="" />
                     </div>
                     <div>
-                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                        <img src="https://ik.imagekit.io/nsrgvmehl/img3.jpeg?updatedAt=1681952932445" alt="" />
                     </div>
                     <div>
-                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                        <img src="https://ik.imagekit.io/nsrgvmehl/img4.jpeg?updatedAt=1681952932881" alt="" />
                     </div>
                     <div>
-                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                        <img src="https://ik.imagekit.io/nsrgvmehl/img6.jpg?updatedAt=1681952954400" alt="" />
                     </div>
                     <div>
-                        <img src="https://ik.imagekit.io/nsrgvmehl/bizTank.png?updatedAt=1681888533626" alt="" />
+                        <img src="https://ik.imagekit.io/nsrgvmehl/img7.JPG?updatedAt=1681952964592" alt="" />
                     </div>
                 </Slider>
             </div>
